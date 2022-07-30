@@ -8,7 +8,7 @@ Official repository for "Image splicing forgery detection by combining synthetic
 
 ## Data Preparation
 1. For SAN: 
-   Merge CASIA v2.0 and Forensics, and put the combination dataset (1891 images) into the subdirs `img` and 'mask'.
+   Merge CASIA v2.0 and Forensics, and put the combination dataset (1891 images) into the subdirs `img` and `mask`.
     ```shell
     HDU-Net/
     ├── ...
@@ -16,10 +16,10 @@ Official repository for "Image splicing forgery detection by combining synthetic
         ├── img/
         └── mask/
     ```
-    Generate a dataset that we call $SF-Data$ (82608 images). You can download $SF-Data$ by the link <https://drive.google.com/file/d/1IoG78dAcxyw5fRPo1DjisKUoykJQTs2_/view?usp=sharing>.
+    Generate a dataset that we call $SF-Data$ (82608 images). You can download $SF-Data$ via the link <https://drive.google.com/file/d/1IoG78dAcxyw5fRPo1DjisKUoykJQTs2_/view?usp=sharing>.
     
 2. For HDU-Net:
-   To generate edge information according to the subdir 'mask'， run
+   To generate edge information according to the subdir `mask`， run
    ```shell
    python SAN/generate_edge.py
    ```
@@ -37,11 +37,11 @@ Official repository for "Image splicing forgery detection by combining synthetic
    ```shell
    python train.py
    ```
-You should change diverse parameters in "options.py"
+You should change diverse parameters in `options.py`
    
 ### Evaluation in Command Line
 1. For SAN:
-    We provide a well-trained model weight "best_model_for_SAN.pth". You can use it to generate dataset based on other datasets like COCO, etc. After running the following codes, you should change the path of dataset in "options_GAN.py". Note that the well-trained weight only accept binary mask.
+    We provide a well-trained model weight `best_model_for_SAN.pth`. You can use it to generate dataset based on other datasets like COCO, etc. After running the following codes, you should change the path of dataset in `options_GAN.py`. Note that the well-trained weight only accept binary mask.
    ```shell
    python SAN/generate_data.py
    ```
