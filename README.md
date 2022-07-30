@@ -64,7 +64,7 @@ If you find this project useful for your research, please use the following BibT
 ```
 
 ## License
-This project is released under the Apache 2.0 license.
+This project is released under the MIT license.
 
 ## Contact
 Contact yale ywei9395@gmail.com for any further information.
