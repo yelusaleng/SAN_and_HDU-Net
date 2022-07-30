@@ -7,7 +7,7 @@ Official repository for "Image splicing forgery detection by combining synthetic
 3. Pytorch: 1.8.0
 
 ## Data Preparation
-1. For SAN: 
+1. For SAN:  
    Merge CASIA v2.0 and Forensics, and put the combination dataset (1891 images) into the subdirs `/img/` and `/mask/`.
     ```shell
     HDU-Net/
@@ -18,7 +18,7 @@ Official repository for "Image splicing forgery detection by combining synthetic
     ```
     Generate a dataset that we call $SF-Data$ (82608 images). You can download $SF-Data$ via the link <https://drive.google.com/file/d/1IoG78dAcxyw5fRPo1DjisKUoykJQTs2_/view?usp=sharing>.
     
-2. For HDU-Net:
+2. For HDU-Net:  
    To generate edge information according to the subdir `/mask/`， run
    ```shell
    python SAN/generate_edge.py
@@ -26,13 +26,13 @@ Official repository for "Image splicing forgery detection by combining synthetic
 
 ## Getting Started
 ### Training in Command Line
-1. For SAN:
+1. For SAN:  
    If you want to retrain SAN, run
    ```shell
    python SAN/train.py
    ```
  
-2. For HDU-Net:
+2. For HDU-Net:  
    To train HDU-Net, run
    ```shell
    python train.py
@@ -40,7 +40,7 @@ Official repository for "Image splicing forgery detection by combining synthetic
 You should change diverse parameters in `options.py`
    
 ### Evaluation in Command Line
-1. For SAN:
+1. For SAN:  
     We provide a well-trained model weight `best_model_for_SAN.pth`.  
     You can download the weight via <https://drive.google.com/file/d/1Qbn3kCxwMA7r-VQ0mpnXaI1tKKetPn7n/view?usp=sharing>, and put it into the subdir `/SAN/`.  
     You can use it to generate dataset based on other datasets like COCO, etc. We have converted the multi-label annotations "train2017" in COCO to binary mask. We are hesitating to upload the dataset since it is too large.  
@@ -50,8 +50,8 @@ You should change diverse parameters in `options.py`
    python SAN/generate_data.py
    ```
 
-2. For HDU-Net:
-   Run
+2. For HDU-Net:  
+   Run  
    ```shell
    python inference.py
    ```
