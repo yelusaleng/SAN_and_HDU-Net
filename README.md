@@ -42,7 +42,7 @@ You should change diverse parameters in `options.py`
 ### Evaluation in Command Line
 1. For SAN:  
     I provide a well-trained model weight `best_model_for_SAN.pth`.  
-    You can download the weight via <https://drive.google.com/file/d/1Qbn3kCxwMA7r-VQ0mpnXaI1tKKetPn7n/view?usp=sharing>, and put it into the subdir `/SAN/`.  
+    You can download the weights via <https://drive.google.com/file/d/1Qbn3kCxwMA7r-VQ0mpnXaI1tKKetPn7n/view?usp=sharing>, and put it into the subdir `/SAN/`.  
     You can use it to generate dataset based on other datasets like COCO, etc. I have converted the multi-label annotations "train2017" in COCO to binary mask. I are hesitating to upload the dataset since it is too large.  
     After running the following codes, you should change the path of dataset in `options_GAN.py`.  
     Note that the well-trained weight only accept binary mask.
@@ -51,6 +51,7 @@ You should change diverse parameters in `options.py`
    ```
 
 2. For HDU-Net:  
+   You can download the weights of HDU-Net via <https://drive.google.com/file/d/1XDMZdGzxSvs22j5uKx6Ywm92JlgFv_iw/view?usp=sharing>.  
    Run  
    ```shell
    python inference.py
