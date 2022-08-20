@@ -1,5 +1,6 @@
 # SAN_and_HDU-Net
 Official repository for "Image splicing forgery detection by combining synthetic adversarial networks and hybrid dense U‐net based on multiple spaces"
+If you think the repository is helpful, give me a star to let me know.
 
 ## Requirements
 1. Python: 3.7.0
